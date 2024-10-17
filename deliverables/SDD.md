@@ -12,10 +12,11 @@
   Yuvraj Gill
   Ethan Almonte
   Sonny Sayaloune
-- Vision statement
-  > This should be a new and fresh vision statement and not a copy of the SRS team's statement.
 
-### System Design Document
+- Vision statement  //sonny
+  > The following Document 
+
+### System Design Document // together
 
 This will include the basic architecture of the system and the high-level strategic decisions. You need to include a description of the:
 
@@ -25,21 +26,21 @@ This will include the basic architecture of the system and the high-level strate
 - Concurrent processes (if any) and how they will be coordinated
 - A package diagram showing the subsystems you will use
 
-### Data Definitions
+### Data Definitions //sonny
 
 Create a table showing what data will need to be stored in your system. For each item give the name of the field/attribute/variable, its type, its meaning in the problem domain expressed in natural language, and an example of valid data.
 
 ### Analysis and Design
 
-#### Class Diagram
+#### Class Diagram // sonny
 
 You need to do an initial design of your system -- what basic objects should it have? And what are the methods associated with those objects? You will represent your design decisions in a class diagram. In a full plan, you need to make sure any classes or methods in any sequence diagrams have been included in the class diagram -- it might help you to draw some sequence diagrams to help you to decide what your class diagram should contain. Method signatures should be given. The diagram must include, as appropriate classes, attributes, associations, inheritance and/or aggregation (if applicable) and multiplicities.
 
-#### One or more State Diagrams for the more interesting objects in your design
+#### One or more State Diagrams for the more interesting objects in your design //Alvin
 
 State Diagrams: You are required to consider the relevant states of each object in your system and to submit state diagrams for those that have interesting states or complex behaviour. One way to measure if a state is interesting is to consider whether you need to test that state before performing a particular action or if the state changes after an action is performed. What is interesting will depend on the application.
 
-### Requirements Traceability Matrix
+### Requirements Traceability Matrix //ethan
 
 Requirements Traceability Matrix (RTM): Set up an RTM with the following columns:
 
@@ -52,11 +53,11 @@ Requirements Traceability Matrix (RTM): Set up an RTM with the following columns
 
 > There should be one row for each requirement. For this deliverable, just fill in the first five columns, since the last column (and usually a couple more after that which I've already deleted) are concerned with the design of the system.
 
-### List of design assumptions (if any)
+### List of design assumptions (if any) // together
 
 This will help the reader to understand why you have done certain things. Please review the assumptions carefully before submission. (But note: A poor assumption should not be used as an excuse for poor design decisions.)
 
-### Test specifications
+### Test specifications // alvin
 
 Test Specifications should contain the following:
 
@@ -72,15 +73,15 @@ Test Specifications should contain the following:
 
 ### Project Management
 
-#### Minimal Viable Product
+#### Minimal Viable Product // yuvi
 
 A description of the _minimal viable product_. This is a version of the product, that is suitable for the client, trusted customers, or early adopter to use for evaluation. Which of the requirements does it implement, and which part of the architecture needs to be in place?
 
-#### Milestones
+#### Milestones // yuvi
 
 A description of the main implementation milestones, in the order in which they should occur in the project. A milestone marks the end of a stage in the project when a version of the product can be reviewed as a whole.
 
-#### Tasks
+#### Tasks // ethan
 
 Describe the main tasks that need to be completed, in the form of a table. The table should include
 
@@ -90,7 +91,7 @@ Describe the main tasks that need to be completed, in the form of a table. The t
 - Effort. Since you do not know how, or even how many people work on the project, it does not make sense for this assignment to estimate workdays. Instead pick a suitable scale (S, M, L, XL or 1 to 5 stars or ...)
 - Milestone. Which milestone do they belong to?
 
-#### Risks
+#### Risks // ethan
 
 A table with the following types of risks
 - Organizational risks that come from changes in the organizational environment. Think of changing stakeholders or management, or a change of mind of stakeholders or management.
@@ -108,7 +109,7 @@ For each risk include
 
 > Since you do not know how many people work on the project, or what resources you may have, it does not make too much sense to talk about people risk, or estimation risk, yet. Furthermore, if something like a probability is unknown, is better to say that it is unknown, instead of making something up.
 
-### Summary and Outlook
+### Summary and Outlook // yuvi
 
 Your famous final words.
 
