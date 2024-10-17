@@ -7,7 +7,11 @@
 
 ### Title Page
 
-- Project name, names of all team members
+- ExploreMQ SDD, 
+  Latthasay Saisanavong
+  Yuvraj Gill
+  Ethan Almonte
+  Sonny Sayaloune
 - Vision statement
   > This should be a new and fresh vision statement and not a copy of the SRS team's statement.
 
