@@ -13,9 +13,8 @@
   Ethan Almonte
   Sonny Sayaloune
 
-- Vision statement  //sonny
-  > The following Document 
-
+- Vision statement  //Alvin
+  >it DirectionsMQ will serve as the map for anyone at Macquarie University. The app will allow students, teacher or visitors to able to easily navigate across the uni as it can get confusing for even experienced tutors. with location tracking the app can guide you to your class. The app includes a friends feature with location sharing to find out where your friends may be that day. These are one of many features. others include a waypoint app to save locations, adding friends.
 ### System Design Document // together
 
 This will include the basic architecture of the system and the high-level strategic decisions. You need to include a description of the:
@@ -40,7 +39,7 @@ You need to do an initial design of your system -- what basic objects should it 
 
 State Diagrams: You are required to consider the relevant states of each object in your system and to submit state diagrams for those that have interesting states or complex behaviour. One way to measure if a state is interesting is to consider whether you need to test that state before performing a particular action or if the state changes after an action is performed. What is interesting will depend on the application.
 
-### Requirements Traceability Matrix // Sonny
+### Requirements Traceability Matrix //ethan
 
 Requirements Traceability Matrix (RTM): Set up an RTM with the following columns:
 
