@@ -40,7 +40,7 @@ You need to do an initial design of your system -- what basic objects should it 
 
 State Diagrams: You are required to consider the relevant states of each object in your system and to submit state diagrams for those that have interesting states or complex behaviour. One way to measure if a state is interesting is to consider whether you need to test that state before performing a particular action or if the state changes after an action is performed. What is interesting will depend on the application.
 
-### Requirements Traceability Matrix //ethan
+### Requirements Traceability Matrix // Sonny
 
 Requirements Traceability Matrix (RTM): Set up an RTM with the following columns:
 
