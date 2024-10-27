@@ -52,6 +52,29 @@ Requirements Traceability Matrix (RTM): Set up an RTM with the following columns
 
 > There should be one row for each requirement. For this deliverable, just fill in the first five columns, since the last column (and usually a couple more after that which I've already deleted) are concerned with the design of the system.
 
+| **Requirement ID** | **Use Cases**        | **Classes**           | **Methods**                        | **Packages**           | **Build Number** |
+|--------------------|----------------------|-----------------------|------------------------------------|-------------------------|------------------|
+| **REQ.UM1**        | Routing A to B       | `MapDisplay`, `Building` | `showMap()`, `loadBuildingDetails()` | `uni.map`, `building`   |                  |
+| **REQ.UM2**        | Routing A to B       | `LocationManager`     | `getUserLocation()`               | `location`              |                  |
+| **REQ.UM3**        | Routing A to B       | `Navigation`          | `provideIndoorDirections()`       | `navigation`, `location`|                  |
+| **REQ.UM4**        | Routing A to B       | `AccessibilityManager`| `getAccessibleRoutes()`           | `accessibility`         |                  |
+| **REQ.UM5**        | Routing A to B       | `BuildingSchedule`    | `updateRoutesBasedOnHours()`      | `scheduling`, `routing` |                  |
+| **REQ.UM6**        | User Report          | `InfrastructureMonitor` | `updateInfrastructure()`          | `maintenance`           |                  |
+| **REQ.UM7**        | Routing A to B       | `CrowdMonitor`        | `adjustForCrowdDensity()`         | `traffic`               |                  |
+| **REQ.UM8**        | Routing A to B       | `MapDisplay`          | `showLandmarkPhotos()`            | `uni.map`               |                  |
+| **REQ.UM9**        | User Report          | `FeedbackSystem`      | `rateFacility()`, `addComment()`  | `feedback`              |                  |
+| **REQ.RT1**        | Routing A to B       | `RouteCalculator`     | `findOptimalRoute()`              | `routing`               |                  |
+| **REQ.RT3**        | Routing A to B       | `RouteScheduler`      | `adjustBasedOnTime()`             | `routing`, `scheduling` |                  |
+| **REQ.DP1**        | Routing in Rain      | `WeatherService`      | `getWeatherData()`                | `weather`               |                  |
+| **REQ.DP2**        | Routing in Rain      | `WeatherService`, `RouteCalculator` | `findDryestPath()` | `weather`, `routing` | |
+| **REQ.UR1**        | User Report          | `FeedbackSystem`      | `reportFacilityIssue()`           | `feedback`, `reporting` |                  |
+| **REQ.UR2**        | User Report          | `FeedbackSystem`      | `reportRouteClosure()`            | `feedback`, `routing`   |                  |
+| **REQ.N01.1**      | Routing A to B       | `RouteCalculator`     | `calculateOptimalRoute()`         | `routing`               |                  |
+| **REQ.N02.1**      | All Use Cases        | `SystemMonitor`       | `monitorUptime()`                 | `monitoring`            |                  |
+| **REQ.N05.1**      | All Use Cases        | `DataEncryptor`       | `encryptLocationData()`           | `security`, `data`      |                  |
+| **REQ.N05.2**      | Authentication       | `AuthManager`         | `signInUser()`, `authorizeAccess()` | `security`, `auth`    |                  |
+
+
 ### List of design assumptions (if any) // together
 
 This will help the reader to understand why you have done certain things. Please review the assumptions carefully before submission. (But note: A poor assumption should not be used as an excuse for poor design decisions.)
