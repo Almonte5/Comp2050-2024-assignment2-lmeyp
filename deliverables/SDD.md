@@ -55,9 +55,9 @@ The system will have a few key External Services which will include:
 
 
 
-#### 3. Storage/persistent data strategy
+#### 2.2 Storage/persistent data strategy
 
-##### 3.1 Data Types and Storage Requirements
+##### 2.2.1 Data Types and Storage Requirements
 - User data: Inclides user settings, preferences and accesibility needs
   - Storage Location: On the user device via local storage.
   - Persistent: Saved for consistent experience across different sessions
@@ -78,12 +78,12 @@ The system will have a few key External Services which will include:
   - Storage Location: Temporarily cached on the device and will refresh regularly
   - Persistent: Cleared after each session or after further updates
 
-##### 3.2 Synchronization Strategy
+##### 2.2.2 Synchronization Strategy
 - Offline Sync: The app allows users to download a static map aswell as route data. When the user is back online it will ush user reports and route submissions to MQDS and retireve relevant updates.
 - Conflict Resolution: User data conflicts like preferences and waypoints that are updated offline will have a "last modified" displayed.
 - Real-Time Data Updates: Real time data will be refreshed on 2 minute intervals.
 
-##### 3.3 Data Security and Privacy Considerations
+##### 2.2.3 Data Security and Privacy Considerations
 - Encryption: Sensitive data, like user location history and reports, will be encrypted on the device and during transmission.
 - Access Control: Based on the role of the user, only authorised people can modify certain data 
 
@@ -102,7 +102,7 @@ Many feature of the The app DirectionMQ require Users to give up some private in
 The app requires a log in depending to connect to MQ servers. The app will also have a guest feature for visitors that dont require login. This give different levels of acess to users depending their login credentials. Visitors for example may only get acess to Main buldings and lucnh spots but not to classrooms and lecture halls. Concurrent processes (if any) and how they will be coordinated
        
 #### 2.4 A package diagram showing the subsystems you will use
- #####
+ ![Package Diagram](/third-party-resources/packageDiagram.PNG)
 
 #### 2.5 Data Definitions 
 
@@ -139,8 +139,7 @@ The app requires a log in depending to connect to MQ servers. The app will also 
 ## 3 Analysis and Design
 
 ### 3.1 Class Diagram 
-
-You need to do an initial design of your system -- what basic objects should it have? And what are the methods associated with those objects? You will represent your design decisions in a class diagram. In a full plan, you need to make sure any classes or methods in any sequence diagrams have been included in the class diagram -- it might help you to draw some sequence diagrams to help you to decide what your class diagram should contain. Method signatures should be given. The diagram must include, as appropriate classes, attributes, associations, inheritance and/or aggregation (if applicable) and multiplicities.
+ ![Class Diagram](/third-party-resources/ClassDiagram.png)
 
 ### 3.2 One or more State Diagrams for the more interesting objects in your design 
 
