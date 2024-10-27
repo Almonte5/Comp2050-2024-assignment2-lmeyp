@@ -29,27 +29,27 @@ This will include the basic architecture of the system and the high-level strate
 #### 1. Overview
 The DirectionsMQ system will be composed of different subsystems that will interact with one another to provide users with turn-by-turn directions, real time updates, accessible routing and customised features like "dryest path" routing. The architecture will be based on a layered model meaning that both mobile and backend components will be used to support functionality like GPS tracking, database management and real time route optimisation. The two main components is the **Client App (Frontend)** and **MQ-Directions-Service (Backend)**, **Database** and external services for weather and live updates.
 
-#### 2. Components
-##### 2.1 Client App (Frontend)
+#### 2.1 Components
+##### 2.1.1 Client App (Frontend)
 This is the main mobile app that will be installed on user devices, it iwll be responsible for user interface, GPS tracking and local storage. They key modules will include:
 - Routing Module: calculates and displays routes within the app also providing a turn by turn guide
 - User Interface (UI): Displays the map, directions and information on Points of Interests (POI) like Central Courtyard.
 - Offline Mode: Allows for users to download portions of the map and relevant information 
 - Feedback & Reporting: Collect and sends the users feedback for things such as reports of route issues, directly to the backend.
 
-##### 2.2 MQ-Directions-Servcse (Backend)
+##### 2.1.2 MQ-Directions-Servcse (Backend)
 The MQDS server is the core of the system managing things such as route calculations, data storage and interfacing with the Directions MQ app. The key Modules will include:
 - Routing Engine: Responsible for calculating optimal and accessible routes that will also factor in real tie updates like weather and contruction.
 - Dry Path algorithm: Calculates routes with minimal exposure to rain.
 - Real-Time Update processor: Revcieve and integrate data on building opening hours, crowd density to optimise routes.
 
-##### 2.3 Database
+##### 2.1.3 Database
 The database is central for storfing campus maps, user reports, crowd density, route data and user preferences. Key elements include:
 - Campus Map & Point of Interest (POI): Stores all map data including building layouts, rooms and waypoints.
 - User Preferences and Data: Contains all of the users customized settings like preferred routes and saved locations.
 - Real Time Data: Hold temporary data on any live updates like closed rooms and crowd density.
 
-##### 2.4 External Services
+##### 2.1.4 External Services
 The system will have a few key External Services which will include:
 - Weather: Providing real time weather data for dry path calculations
 - MQ Authentication: Enables for secure single sign in for Macqurie staff, studends and other users.
@@ -57,15 +57,26 @@ The system will have a few key External Services which will include:
 
 
 
-- Storage/persistent data strategy
+#### 2.2 Storage/persistent data strategy
 
+ 
+#### 2.3 Noteworthy trade-offs and choices
+   ##### 2.3.1 Real Time vs Offline functionality
+Implementing Real-Time routing requires as expected constant internet connection this will greatly increase the systems capabilities. Having this feature will allow The app to provide live location, new updates and best routes. This comes as a sacriface as  offline capabilities are lot less minimal but this comes at the advantage of usability in areas with poor connectivity.
 
-- Noteworthy trade-offs and choices
-- Concurrent processes (if any) and how they will be coordinated
-- A package diagram showing the subsystems you will use
+   ##### 2.3.2 Complexity vs. Usability
+Including advanced feature onto the system will increase capabilities but inturn take away from the simpleness of the UI. Feature rich System can overwhelm new user compared to a more simplistic Design. The learning curve can deter new users but will in turn be a more complete app in the end.
 
-## Data Definitions 
+   ##### 2.3.3 User Privacy vs. Feature Richness
+Many feature of the The app DirectionMQ require Users to give up some private info. This may include sensitive data such as location. Though the app may take in compromising data it gives acess to several functions in the app.
 
+   ##### 2.3.4 User Authentication vs. Guest Access 
+The app requires a log in depending to connect to MQ servers. The app will also have a guest feature for visitors that dont require login. This give different levels of acess to users depending their login credentials. Visitors for example may only get acess to Main buldings and lucnh spots but not to classrooms and lecture halls. Concurrent processes (if any) and how they will be coordinated
+       
+#### 2.4 A package diagram showing the subsystems you will use
+ #####
+
+#### 2.5 Data Definitions 
 
 | Field Name            | Type       | Meaning in Problem Domain                                               | Example of Valid Data               |
 |-----------------------|------------|-------------------------------------------------------------------------|-------------------------------|
@@ -97,22 +108,17 @@ The system will have a few key External Services which will include:
 | `userSession`         | String     | Identifier for the current user session                                | "session_1"               |
 | `authenticationStatus`| String     | Status of user authentication (e.g., signed in, access granted)        | "Authorized"                   |
 
+## 3 Analysis and Design
 
-
-
-
-
-## Analysis and Design
-
-### Class Diagram // Alvin
+### 3.1 Class Diagram 
 
 You need to do an initial design of your system -- what basic objects should it have? And what are the methods associated with those objects? You will represent your design decisions in a class diagram. In a full plan, you need to make sure any classes or methods in any sequence diagrams have been included in the class diagram -- it might help you to draw some sequence diagrams to help you to decide what your class diagram should contain. Method signatures should be given. The diagram must include, as appropriate classes, attributes, associations, inheritance and/or aggregation (if applicable) and multiplicities.
 
-### One or more State Diagrams for the more interesting objects in your design //sonny
+### 3.2 One or more State Diagrams for the more interesting objects in your design 
 
 State Diagrams: You are required to consider the relevant states of each object in your system and to submit state diagrams for those that have interesting states or complex behaviour. One way to measure if a state is interesting is to consider whether you need to test that state before performing a particular action or if the state changes after an action is performed. What is interesting will depend on the application.
 
-## Requirements Traceability Matrix //ethan
+## 4 Requirements Traceability Matrix 
 
 Requirements Traceability Matrix (RTM): Set up an RTM with the following columns:
 
@@ -152,14 +158,14 @@ Requirements Traceability Matrix (RTM): Set up an RTM with the following columns
 
 This will help the reader to understand why you have done certain things. Please review the assumptions carefully before submission. (But note: A poor assumption should not be used as an excuse for poor design decisions.)
 
-## Test specifications 
-
+## 5 Test
+### 5.1 Test Specifications
 | Test ID |Test description | Input specifications | Output specifications |
 | -------- | ----------- | ---- | ------------------- | 
-| TC1.UM01 | Checks that the map is high fidelity|User initiates a request for the map | The system Map should ouput all the university building in high fidelity as requested|
+| TC1.UM01 | Checks that the map is high fidelity|User initiates a request for the map | The system map should ouput all the university building in high fidelity as requested|
 | TC2.UM02 | Use GPS to determine accurate location |Accurate user location| The system shall correctly output the users location on the map|
-| TC3.UM03 | The System shall use door-door navigation within buildings |Accurate location within a building|The System shoudd be able to diplay the student location within a building and |
-| TC4.UM04 | Test accessible routes for individuals with disabilities |Given a destination and a disability flag| The system should find a route in which is handicapped accesible|
+| TC3.UM03 | The System shall use door-door navigation within buildings |Accurate location within a building|The System shoudd be able to diplay the student location within a building |
+| TC4.UM04 | Test accessible routes for individuals with disabilities |Given a destination and a handicap request| The system should find a route in which is handicap accesible|
 | TC5.UM05 | Building Closing time |BuildingId and Current Time| The system should display the closing times of the Building and how long till it will be closed |
 | TC6.UM06 | Update to University Infrastructure | Admin Updates| The system shall provide a notification to the DirectionsMQ and updates routes if needed |
 | TC7.UM07 | Validate crowd density display and route adjustment | Crowd density data (location and phone traffic) | The system shall display crowd density within an area and adjust routes |
@@ -168,19 +174,18 @@ This will help the reader to understand why you have done certain things. Please
 | TC10.I01 | The app should connect to the internet | User request System acess | The app should require internet acess as to function and get updates |
 | TC11.I02 | The app should be connected through MQ servers | Server URL, port number, and valid credentials |The system should establish a connection to the MQ server successfully |
 | TC12.I03 | Check User LogIN e.g(visitor, student admin)| User Submits request to acess App| The App should provide acess to the app based on the credentials |
-| TC13.I04 | 
   
-- Test plans
+#### 5.2 Test plans
 Introduction
 The purpose of this test plan is to outline the testing methodology for the DiscoverMQ application. By executing the defined testing scenarios, the system should demonstrate efficient functionality and meet all specified requirements. This test plan aims to identify and rectify code defects, ensuring that the application operates smoothly and reliably for users.
-Scope
 
+##### 5.2.1 Test Scope
 This testing effort will encompass various types of testing, including but not limited to:
-  -Functional Testing: Theses will check that the FUnctional parts of the code should fucntion as expected.
-  -Performance Testing: To evaluate the application's perfomance and usability.
-  -Usability Testing: Evaluate how well the DiscoverMQ usability is. these may include UI and other 
+  ###### 5.2.1.1 Functional Testing: Theses will check that the FUnctional parts of the code should fucntion as expected.
+  ###### 5.2.1.2 Performance Testing: To evaluate the application's perfomance and usability.
+  ###### 5.2.1.3 Usability Testing: Evaluate how well the DiscoverMQ usability is. these may include UI and other 
 
-Testing Resources
+##### 5.2.2 Testing Resources
 List the resources required for testing, such as:
   - Personnel 
   - The Testing Requires several testers to validate the test these include 
@@ -193,8 +198,7 @@ List the resources required for testing, such as:
 
 Example:
 
-- Test milestone
-  
+##### 5.2.2 Test milestone
 | Milestone                     | Date          |
 |-------------------------------|---------------|
 | Completion of Test Case Development | week 2 |
@@ -205,14 +209,9 @@ Example:
 | User Acceptance Testing        | week 7  |
 | Final Review and Approval      | week 8  |
 
-  
-- Test plans, including for example a test schedule, testing resources required, testing milestones and test deliverables. Test plans, covering scheduling and resourcing of all testing processes. Test plans can be more open format and should provide a description of how you would organise the actual testing of the Test Case Specifications that you've identified.
+## 6 Project Management
 
-> The test specification section should cover at least one-third of the report.
-
-## Project Management
-
-### Minimal Viable Product // yuvi
+### 6.1 Minimal Viable Product // yuvi
 
 A description of the _minimal viable product_. This is a version of the product, that is suitable for the client, trusted customers, or early adopter to use for evaluation. Which of the requirements does it implement, and which part of the architecture needs to be in place?
 
@@ -240,7 +239,7 @@ These features will need to be supported by the following architecture component
 - A backend server to handle data storage and processing for user accounts, waypoints, and location sharing.
 
 
-### Milestones // yuvi
+### 6.2 Milestones // yuvi
 
 A description of the main implementation milestones, in the order in which they should occur in the project. A milestone marks the end of a stage in the project when a version of the product can be reviewed as a whole.
 
@@ -258,7 +257,7 @@ The Milestones for the DirectionsMQ project outline key stages of development, m
 | M8 | Final Adjustments: Make adjustments based on feedback from the MVP review and prepare for final deployment. | Week 12 |
 | M9 | Project Closure: Complete documentation, review project outcomes, and gather insights for future iterations.	| Week 13 |
 
-### Tasks // Yuvi
+### 6.3 Tasks // Yuvi
 
 Describe the main tasks that need to be completed, in the form of a table. The table should include
 
@@ -280,7 +279,7 @@ Describe the main tasks that need to be completed, in the form of a table. The t
 | T8 | Make final adjustments based on user feedback and prepare for deployment. | T7 | L | M8: Final Adjustments |
 | T9 | Complete project documentation and conduct a project closure review. | T8 | S | M9: Project Closure |
 
-### Risks // ethan
+### 6.4 Risks 
 
 A table with the following types of risks
 - Organizational risks that come from changes in the organizational environment. Think of changing stakeholders or management, or a change of mind of stakeholders or management.
@@ -298,13 +297,14 @@ For each risk include
 
 > Since you do not know how many people work on the project, or what resources you may have, it does not make too much sense to talk about people risk, or estimation risk, yet. Furthermore, if something like a probability is unknown, is better to say that it is unknown, instead of making something up.
 
-## Summary and Outlook // yuvi
+## Summary and Outlook
 
 Your famous final words.
 
 ## Appendices
 
 - Log of interactions with stakeholders.
+   
 - References.
 - Third-party-resources
 
