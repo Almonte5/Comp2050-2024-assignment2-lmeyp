@@ -66,8 +66,9 @@ Test Specifications should contain the following:
   - Test description
   - Input specifications
   - Output specifications
-| Test Case Identifier  |Test description | Input specifications | Output specifications |
-| --- | ----------- | -----| ------------------- | 
+
+| Test ID |Test description | Input specifications | Output specifications |
+| --- | ----------- | ----- | ------------------- | 
 | TC1 |             | 29/08|                     |
 | TC2 |             | 8/09 |                     |
 | TC3 |             | 8/09 |                     |
@@ -75,7 +76,7 @@ Test Specifications should contain the following:
 | TC5 |             | 8/09 |                     |
 | TC6 |             | 9/09 |                     |
 | TC7 |             | 9/09 |                     |
-| TC* |             | 9/09 |                     |
+| TC8 |             | 9/09 |                     |
   
 - Test plans, including for example a test schedule, testing resources required, testing milestones and test deliverables. Test plans, covering scheduling and resourcing of all testing processes. Test plans can be more open format and should provide a description of how you would organise the actual testing of the Test Case Specifications that you've identified.
 
