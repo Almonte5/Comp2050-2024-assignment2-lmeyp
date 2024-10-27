@@ -57,18 +57,14 @@ Requirements Traceability Matrix (RTM): Set up an RTM with the following columns
 This will help the reader to understand why you have done certain things. Please review the assumptions carefully before submission. (But note: A poor assumption should not be used as an excuse for poor design decisions.)
 
 ### Test specifications // alvin
-
+The Following Test specification will cover the Map.
 Test Specifications should contain the following:
 
 - Test-case specifications, made up of test-case identifiers, and test data (input specifications and output specifications).
   Acceptable documentation for Test Case Specifications would include:
-  - Test Case Identifier
-  - Test description
-  - Input specifications
-  - Output specifications
 
 | Test ID |Test description | Input specifications | Output specifications |
-| --- | ----------- | ----- | ------------------- | 
+| --- | ----------- | ---- | ------------------- | 
 | TC1 |             | 29/08|                     |
 | TC2 |             | 8/09 |                     |
 | TC3 |             | 8/09 |                     |
