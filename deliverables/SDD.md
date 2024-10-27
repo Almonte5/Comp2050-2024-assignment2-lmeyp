@@ -290,7 +290,11 @@ Description: The app will allow users to share their locations with friends with
 
 ## 7 Summary and Outlook
 
-Your famous final words.
+The DirectionsMQ project focuses on developing a navigation and location sharing app for the Macquarie University community. The MVP will provide essential features like user authentication, real-time location tracking, and turn-by-turn navigation to meet the basic needs of students and staff.
+
+Moving forward, we will prioritize refining the app based on user feedback from the MVP review, ensuring it evolves to enhance the user experience. Future enhancements may include personalized route recommendations and integration with university events.
+
+Ultimately, DirectionsMQ aims to streamline navigation on campus and foster a stronger sense of community among users, positioning itself as a vital tool within the university environment.
 
 ## 8 Appendices
    ### 8.1 Log of interactions with stakeholders
