@@ -56,11 +56,7 @@ Requirements Traceability Matrix (RTM): Set up an RTM with the following columns
 
 This will help the reader to understand why you have done certain things. Please review the assumptions carefully before submission. (But note: A poor assumption should not be used as an excuse for poor design decisions.)
 
-### Test specifications // alvin
-The Following Test specification will cover the Map.
-Test Specifications should contain the following:
-- Test-case specifications, made up of test-case identifiers, and test data (input specifications and output specifications).
-  Acceptable documentation for Test Case Specifications would include:
+### Test specifications 
 
 | Test ID |Test description | Input specifications | Output specifications |
 | -------- | ----------- | ---- | ------------------- | 
@@ -76,40 +72,38 @@ Test Specifications should contain the following:
   
 - Test plans
 Introduction
-including for example a test schedule, testing resources required, testing milestones and test deliverables. Test plans, covering scheduling and resourcing of all testing processes. Test plans can be more open format and should provide a description of how you would organise the actual testing of the Test Case Specifications that you've identified.
-Test Plan Outline for Uni Map Project
-Introduction
 The purpose of this test plan is to outline the testing methodology for the DiscoverMQ application. By executing the defined testing scenarios, the system should demonstrate efficient functionality and meet all specified requirements. This test plan aims to identify and rectify code defects, ensuring that the application operates smoothly and reliably for users.
 Scope
+
 This testing effort will encompass various types of testing, including but not limited to:
--Functional Testing: Theses will check that the FUnctional parts of the code should fucntion as expected.
+  -Functional Testing: Theses will check that the FUnctional parts of the code should fucntion as expected.
+  -Performance Testing: To evaluate the application's perfomance and usability.
+  -Usability Testing: Evaluate how well the DiscoverMQ usability is. these may include UI and other 
 
--Performance Testing: To evaluate the application's perfomance and usability.
--Usability Testing: Evaluate how well the DiscoverMQ usability is. these may include UI and other 
+Testing Resources
+List the resources required for testing, such as:
+  - Personnel 
+  - The Testing Requires several testers to validate the test these include 
+  - Functional Testesr
+      - checks that the application meets the requirements
+  - Tools
+    - Mapping and GPS Simulation Tools:
+    - Performance Testing Tools:
+    - Test Management Tools:
 
-
-Clearly outline the objectives of testing, such as validating user requirements, ensuring functionality, and verifying usability.
-Test Strategy
-
-Types of Testing: Describe the types of testing that will be conducted (e.g., unit testing, integration testing, system testing, user acceptance testing).
-Testing Methodology: Explain the approach, such as manual testing or automated testing, and any tools that will be used.
-Test Schedule
-
-Provide a timeline for testing activities, including key milestones such as:
-Test case development completion date
-Start and end dates for testing phases (e.g., unit testing, system testing)
-Dates for reviews and approvals
 Example:
+
 - Test milestone
+  
 | Milestone                     | Date          |
 |-------------------------------|---------------|
-| Completion of Test Case Development | [Insert Date]  |
-| Commencement of Unit Testing   | [Insert Date]  |
-| Completion of Unit Testing     | [Insert Date]  |
-| Commencement of Integration Testing | [Insert Date]  |
-| Completion of Integration Testing | [Insert Date]  |
-| User Acceptance Testing        | [Insert Date]  |
-| Final Review and Approval      | [Insert Date]  |
+| Completion of Test Case Development | week 2 |
+| Commencement of Unit Testing   | week 3 |
+| Completion of Unit Testing     | week 4  |
+| Commencement of Integration Testing | week 5  |
+| Completion of Integration Testing | week 6  |
+| User Acceptance Testing        | week 7  |
+| Final Review and Approval      | weel 8  |
 
   
 - Test plans, including for example a test schedule, testing resources required, testing milestones and test deliverables. Test plans, covering scheduling and resourcing of all testing processes. Test plans can be more open format and should provide a description of how you would organise the actual testing of the Test Case Specifications that you've identified.
