@@ -288,7 +288,7 @@ Description: The app will allow users to share their locations with friends with
 | R4 | Tools Risk | Issues with the development tools or environments could hinder development progress and collaboration. | Medium | 5 | Ensure a stable development environment and provide team members with access to necessary tools and training. |
 
 
-## Summary and Outlook
+## 7 Summary and Outlook
 
 Your famous final words.
 
@@ -300,8 +300,8 @@ Your famous final words.
 |2024-10-10 | Emmanuel Almonte (Group2TeamB2) | Ask about the requirements to confirms when creating test specifications | Take input and translate into the SDD |
 |2024-10-17 | Yash Shitole (Group2TeamB1) &  Emmanuel Almonte (Group2TeamB2) | My group went to the two groups to enquire about privacy risk in the design | Create risk according to stakeholder demands |
 
-- References.
-- Third-party-resources: draw.io
+- References: Software Requirements Specification (SRS) provided by Group2TeamB1 and Group2TeamB2.
+- Third-party-resources: draw.io, markdownguide.org
 
 
 # Note
