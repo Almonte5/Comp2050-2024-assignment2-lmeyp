@@ -13,12 +13,13 @@
   Ethan Almonte
   Sonny Sayaloune
 
-- Vision statement  
+### Vision statement  
+
 DirectionsMQ will serve as a comprehensive naviagation tool for students, teaching staff and visitors at Macquarie University. Providing seamless, realtime navigation,k DirectionsMQ is designed to help users naviagate
 through the enormous campus and help them get to their location as fast, and with less trouble as possible.
 
 
-### System Design Document // together
+### System Design Document 
 
 This will include the basic architecture of the system and the high-level strategic decisions. You need to include a description of the:
 
