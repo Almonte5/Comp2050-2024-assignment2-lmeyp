@@ -297,6 +297,14 @@ For each risk include
 
 > Since you do not know how many people work on the project, or what resources you may have, it does not make too much sense to talk about people risk, or estimation risk, yet. Furthermore, if something like a probability is unknown, is better to say that it is unknown, instead of making something up.
 
+| Risk ID | Risk Type             | Description                                                                 | Probability | Severity | Mitigation Strategies |
+|---------|-----------------------|-----------------------------------------------------------------------------|-------------|----------|-----------------------|
+| R1 | Organizational Risk | Changes in university administration or stakeholder priorities may affect project scope and funding. | Medium | 7 | Maintain regular communication with stakeholders to align expectations and adapt project scope as needed. |
+| R2 | Requirements Risk | Changes in user requirements or misunderstanding of requirements may lead to project delays or rework. | High | 6 | Implement a clear requirements-gathering process with stakeholder sign-offs and conduct regular reviews. |
+| R3 | Technology Risk | Dependency on third-party mapping API may result in service outages or changes in API terms. | Medium | 8 | Establish backup solutions, such as alternative mapping services, and monitor API status regularly. |
+| R4 | Tools Risk | Issues with the development tools or environments could hinder development progress and collaboration. | Medium | 5 | Ensure a stable development environment and provide team members with access to necessary tools and training. |
+
+
 ## Summary and Outlook
 
 Your famous final words.
