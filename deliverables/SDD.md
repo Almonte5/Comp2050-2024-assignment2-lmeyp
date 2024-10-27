@@ -8,6 +8,8 @@
 ## Title Page
 
  - DIrectionsMQ SDD
+
+ ### Members
  - Latthasay Saisanavong
  - Yuvraj Gill
  - Ethan Almonte
@@ -67,9 +69,12 @@ The system will have a few key External Services which will inclde:
 
 | Field Name            | Type       | Meaning in Problem Domain                                               | Example of Valid Data               |
 |-----------------------|------------|-------------------------------------------------------------------------|-------------------------------|
-| `userID`              | Integer    | Unique identifier for each user in the system                           | 1069                     |
-| `origin`              | String     | Starting point of the user’s requested route                            | "Macquarie University Sport and Aquatic Centre"       |
-| `destination`         | String     | Endpoint of the user’s requested route                                  | "4 Research Park Drive"      |
+| `userID`              | Integer    | Unique identifier for each user in the system                           | 1069                     | 
+| `username`            | String     | Username for the user                                                   | "Bob"       |
+| `gpsOrigin`           | Coordinates (float)  | Starting point GPS location of the user’s requested route, showing latitude and longitude     | "lat": -33.00, "long": 151.1121 |
+| `gpsDestination`      | Coordinates (float)  | GPS endpoint of the user’s requested route, showing latitude and longitude                    | "lat": -40.51, "long": 130.3123 |
+| `origin`              | String     | Starting point of the user’s requested route                            | "Central Building"       |
+| `destination`         | String     | Endpoint of the user’s requested route                                  | "MQ Business Building"      |
 | `routeID`             | Integer    | Unique identifier for each generated route                              | 501                           |
 | `routeSteps`          | Array      | Array of step-by-step directions for the route                          | "Turn left", "Go straight"  |
 | `landmark`            | String     | Major landmark near a route for easier navigation                       | "Central Building"              |
@@ -96,7 +101,12 @@ The system will have a few key External Services which will inclde:
 
 
 
+<<<<<<< HEAD
 ## Analysis and Design
+=======
+
+### Analysis and Design
+>>>>>>> 3c8e1262051f5bdf26f164ce476794dccee50577
 
 ### Class Diagram // Alvin
 
