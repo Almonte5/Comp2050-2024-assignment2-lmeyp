@@ -143,20 +143,9 @@ The app requires a log in depending to connect to MQ servers. The app will also 
 
 ### 3.2 One or more State Diagrams for the more interesting objects in your design 
 
-State Diagrams: You are required to consider the relevant states of each object in your system and to submit state diagrams for those that have interesting states or complex behaviour. One way to measure if a state is interesting is to consider whether you need to test that state before performing a particular action or if the state changes after an action is performed. What is interesting will depend on the application.
+ ![State Diagram](/third-party-resources/StateDiagram.png)
 
 ## 4 Requirements Traceability Matrix 
-
-Requirements Traceability Matrix (RTM): Set up an RTM with the following columns:
-
-- Requirement-ID (from SRS)
-- Use Cases
-- Classes
-- Methods
-- Packages
-- Build Number (kept blank at this stage)
-
-> There should be one row for each requirement. For this deliverable, just fill in the first five columns, since the last column (and usually a couple more after that which I've already deleted) are concerned with the design of the system.
 
 | **Requirement ID** | **Use Cases**        | **Classes**           | **Methods**                        | **Packages**           | **Build Number** |
 |--------------------|----------------------|-----------------------|------------------------------------|-------------------------|------------------|
