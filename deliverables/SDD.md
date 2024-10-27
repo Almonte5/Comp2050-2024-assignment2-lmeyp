@@ -19,8 +19,41 @@
 
 This will include the basic architecture of the system and the high-level strategic decisions. You need to include a description of the:
 
-- System architecture
+#### System architecture
+##### 1. Overview
+The DirectionsMQ system will be composed of different subsystems that will interact with one another to provide users with turn-by-turn directions, real time updates, accessible routing and customised features like "dryest path" routing. The architecture will be based on a layered model meaning that both mobile and backend components will be used to support functionality like GPS tracking, database management and real time route optimisation. The two main components is the **Client App (Frontend)** and **MQ-Directions-Service (Backend)**, **Database** and external services for weather and live updates.
+
+##### 2. Components
+###### 2.1 Client App (Frontend)
+This is the main mobile app that will be installed on user devices, it iwll be responsible for user interface, GPS tracking and local storage. They key modules will include:
+- Routing Module: calculates and displays routes within the app also providing a turn by turn guide
+- User Interface (UI): Displays the map, directions and information on Points of Interests (POI) like Central Courtyard.
+- Offline Mode: Allows for users to download portions of the map and relevant information 
+- Feedback & Reporting: Collect and sends the users feedback for things such as reports of route issues, directly to the backend.
+
+###### 2.2 MQ-Directions-Servcse (Backend)
+The MQDS server is the core of the system managing things such as route calculations, data storage and interfacing with the Directions MQ app. The key Modules will include:
+- Routing Engine: Responsible for calculating optimal and accessible routes that will also factor in real tie updates like weather and contruction.
+- Dry Path algorithm: Calculates routes with minimal exposure to rain.
+- Real-Time Update processor: Revcieve and integrate data on building opening hours, crowd density to optimise routes.
+
+###### 2.3 Database
+The database is centrol for stroing campus maps, user reports, crowd density, route data and user preferences. Kep elements incldue:
+- Campus Map & Point of Interest (POI): Stores all map data including building layouts, rooms and waypoints.
+- User prefrences and Data: Contains all of the users customized settings like prefered routes and saved locations.
+- Real Time data: Hold temporary data on any live updates like closed rooms and crowd density.
+
+###### 2.4 External Services
+The system will have a few key External Services which will inclde:
+- Weather: Providing real time weather data for dry path calculations
+- MQ Authentication: Enables for secure single sign in for Macqurie staff, studends and other users.
+- MQ Campus updates: Supplies regular updates on campus events construction and other obstacles.
+
+
+
 - Storage/persistent data strategy
+
+
 - Noteworthy trade-offs and choices
 - Concurrent processes (if any) and how they will be coordinated
 - A package diagram showing the subsystems you will use
