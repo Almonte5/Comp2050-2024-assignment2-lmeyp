@@ -15,7 +15,7 @@
 
 ### Vision statement  
 
-DirectionsMQ will serve as a comprehensive naviagation tool for students, teaching staff and visitors at Macquarie University. Providing seamless, realtime navigation,k DirectionsMQ is designed to help users naviagate
+DirectionsMQ will serve as a comprehensive naviagation tool for students, teaching staff and visitors at Macquarie University. Providing seamless, realtime navigation, DirectionsMQ is designed to help users naviagate
 through the enormous campus and help them get to their location as fast, and with less trouble as possible.
 
 
@@ -29,7 +29,7 @@ This will include the basic architecture of the system and the high-level strate
 - Concurrent processes (if any) and how they will be coordinated
 - A package diagram showing the subsystems you will use
 
-### Data Definitions //sonny
+### Data Definitions 
 
 Create a table showing what data will need to be stored in your system. For each item give the name of the field/attribute/variable, its type, its meaning in the problem domain expressed in natural language, and an example of valid data.
 
