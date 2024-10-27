@@ -310,7 +310,6 @@ For each risk include
 Your famous final words.
 
 ## 8 Appendices
-- Log of interactions with stakeholders.
    ### 8.1 Log of interactions with stakeholders
 |Date       |Stakeholder |Interaction Summary   |Action Items |
 |-----------|------------|----------------------|-------------|
