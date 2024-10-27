@@ -7,7 +7,7 @@
 
 ### Title Page
 
- - DIrectionsMQ SDD, 
+ - DIrectionsMQ SDD
  - Latthasay Saisanavong
  - Yuvraj Gill
  - Ethan Almonte
@@ -31,7 +31,6 @@ This will include the basic architecture of the system and the high-level strate
 
 ### Data Definitions 
 
-Create a table showing what data will need to be stored in your system. For each item give the name of the field/attribute/variable, its type, its meaning in the problem domain expressed in natural language, and an example of valid data.
 
 | Field Name            | Type       | Meaning in Problem Domain                                               | Example of Valid Data               |
 |-----------------------|------------|-------------------------------------------------------------------------|-------------------------------|
@@ -45,12 +44,23 @@ Create a table showing what data will need to be stored in your system. For each
 | `distance`            | Float      | Distance of the route in kilometers                                     | 15.2                          |
 | `lastUpdated`         | DateTime   | Timestamp of the last update to the route or traffic conditions         | "2024-10-27T14:30:00"         |
 | `preferredRouteType`  | String     | Preferred route type (e.g., shortest, dryest, scenic)                   | "Fastest"                     |
+| `userRating`          | Integer    | Rating provided by the user for a facility or route                     | 4 (ratintgs are out of 5)                   |
 | `userFeedback`        | String     | Feedback provided by users on route accuracy or convenience             | "Very accurate directions"    |
 | `weatherCondition`    | String     | Current weather condition affecting the route                           | "Rainy"                       |
 | `safetyAlert`         | Boolean    | Indicates if there’s a safety alert (e.g., road closures or accidents)  | True                          |
 | `reRouteNeeded`       | Boolean    | Flag to indicate if rerouting is necessary due to real-time conditions  | True                          |
 | `realTimeUpdates`     | Array      | Array of real-time alerts or messages about route changes               | "Construction near 4 Research Park Drive"    |
 | `notificationOptIn`   | Boolean    | Indicates if the user has opted in for notifications                    | True                          |
+| `friendID`            | Integer    | Unique identifier for a friend of the user                              | 1070                          |
+| `friendshipStatus`    | String     | Current status of friendship (e.g., Pending, Accepted, Blocked)         | "Accepted", "Pending", "Denied" |
+| `friendAlias`         | String     | User-assigned nickname for the friend, if set                           | "nerd" "bestie"                       |
+| `accessibilityOptions`| String     | User-selected accessibility preferences (e.g., wheelchair access)       | "Wheelchair Accessible"        |
+| `infrastructureStatus`| String     | Current condition of infrastructure, including route and facility health | "Operational"              |
+| `userSession`         | String     | Identifier for the current user session                                | "session_1"               |
+| `authenticationStatus`| String     | Status of user authentication (e.g., signed in, access granted)        | "Authorized"                   |
+
+
+
 
 
 ### Analysis and Design
