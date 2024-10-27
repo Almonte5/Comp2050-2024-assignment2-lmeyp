@@ -7,11 +7,11 @@
 
 ### Title Page
 
-- DIrectionsMQ SDD, 
-  Latthasay Saisanavong
-  Yuvraj Gill
-  Ethan Almonte
-  Sonny Sayaloune
+ - DIrectionsMQ SDD, 
+ - Latthasay Saisanavong
+ - Yuvraj Gill
+ - Ethan Almonte
+ - Sonny Sayaloune
 
 ### Vision statement  
 
@@ -33,9 +33,29 @@ This will include the basic architecture of the system and the high-level strate
 
 Create a table showing what data will need to be stored in your system. For each item give the name of the field/attribute/variable, its type, its meaning in the problem domain expressed in natural language, and an example of valid data.
 
+| Field Name            | Type       | Meaning in Problem Domain                                               | Example of Data               |
+|-----------------------|------------|-------------------------------------------------------------------------|-------------------------------|
+| `userID`              | Integer    | Unique identifier for each user in the system                           | 1069                     |
+| `origin`              | String     | Starting point of the user’s requested route                            | "Macquarie University Sport and Aquatic Centre"       |
+| `destination`         | String     | Endpoint of the user’s requested route                                  | "4 Research Park Drive"      |
+| `routeID`             | Integer    | Unique identifier for each generated route                              | 501                           |
+| `routeSteps`          | Array      | Array of step-by-step directions for the route                          | ["Turn left", "Go straight"]  |
+| `landmark`            | String     | Major landmark near a route for easier navigation                       | "Central Building"              |
+| `estimatedTime`       | Integer    | Estimated travel time in minutes for the route                          | 25                            |
+| `distance`            | Float      | Distance of the route in kilometers                                     | 15.2                          |
+| `lastUpdated`         | DateTime   | Timestamp of the last update to the route or traffic conditions         | "2024-10-27T14:30:00"         |
+| `preferredRouteType`  | String     | Preferred route type (e.g., shortest, dryest, scenic)                   | "Fastest"                     |
+| `userFeedback`        | String     | Feedback provided by users on route accuracy or convenience             | "Very accurate directions"    |
+| `weatherCondition`    | String     | Current weather condition affecting the route                           | "Rainy"                       |
+| `safetyAlert`         | Boolean    | Indicates if there’s a safety alert (e.g., road closures or accidents)  | True                          |
+| `reRouteNeeded`       | Boolean    | Flag to indicate if rerouting is necessary due to real-time conditions  | True                          |
+| `realTimeUpdates`     | Array      | Array of real-time alerts or messages about route changes               | ["Road closed at Main St"]    |
+| `notificationOptIn`   | Boolean    | Indicates if the user has opted in for notifications                    | True                          |
+
+
 ### Analysis and Design
 
-#### Class Diagram // sonny
+#### Class Diagram // Alvin
 
 You need to do an initial design of your system -- what basic objects should it have? And what are the methods associated with those objects? You will represent your design decisions in a class diagram. In a full plan, you need to make sure any classes or methods in any sequence diagrams have been included in the class diagram -- it might help you to draw some sequence diagrams to help you to decide what your class diagram should contain. Method signatures should be given. The diagram must include, as appropriate classes, attributes, associations, inheritance and/or aggregation (if applicable) and multiplicities.
 
