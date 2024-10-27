@@ -258,7 +258,7 @@ The Milestones for the DirectionsMQ project outline key stages of development, m
 | M8 | Final Adjustments: Make adjustments based on feedback from the MVP review and prepare for final deployment. | Week 12 |
 | M9 | Project Closure: Complete documentation, review project outcomes, and gather insights for future iterations.	| Week 13 |
 
-### Tasks // ethan
+### Tasks // Yuvi
 
 Describe the main tasks that need to be completed, in the form of a table. The table should include
 
@@ -267,6 +267,18 @@ Describe the main tasks that need to be completed, in the form of a table. The t
 - Dependencies, i.e. tasks that need to be completed before this task can start.
 - Effort. Since you do not know how, or even how many people work on the project, it does not make sense for this assignment to estimate workdays. Instead pick a suitable scale (S, M, L, XL or 1 to 5 stars or ...)
 - Milestone. Which milestone do they belong to?
+
+| Task ID | Description                                                        | Dependencies             | Effort | Milestone                                               |
+|---------|--------------------------------------------------------------------|--------------------------|--------|--------------------------------------------------------|
+| T1 | Conduct a kickoff meeting to define project goals and expectations. | None | S | M1: Project Kickoff|
+| T2 | Develop the user authentication module, including registration and login features. | T1 | M | M2: Completion of User Authentication Module |
+| T3 | Design the interactive map layout and integrate it with mapping services. | T2 | L | M3: Implementation of Map Navigation |
+| T4 | Implement real-time location tracking functionality to show user location on the map. | T3 | L | M4: Real-time Location Tracking |
+| T5 | Develop the classroom directions feature, enabling navigation to specific classrooms. | T4 | M | M5: Classroom Directions Feature |
+| T6 | Implement the friends feature, allowing users to add friends and share their locations. | T5 | M | M6: Friends Feature Implementation |
+| T7 | Conduct user testing with early adopters to gather feedback on the MVP. | T6 | M | M7: MVP Review |
+| T8 | Make final adjustments based on user feedback and prepare for deployment. | T7 | L | M8: Final Adjustments |
+| T9 | Complete project documentation and conduct a project closure review. | T8 | S | M9: Project Closure |
 
 ### Risks // ethan
 
