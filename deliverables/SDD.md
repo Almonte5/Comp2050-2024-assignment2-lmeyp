@@ -87,15 +87,16 @@ Test Specifications should contain the following:
   Acceptable documentation for Test Case Specifications would include:
 
 | Test ID |Test description | Input specifications | Output specifications |
-| --- | ----------- | ---- | ------------------- | 
-| TC1 |             | 29/08|                     |
-| TC2 |             | 8/09 |                     |
-| TC3 |             | 8/09 |                     |
-| TC4 |             | 8/09 |                     |
-| TC5 |             | 8/09 |                     |
-| TC6 |             | 9/09 |                     |
-| TC7 |             | 9/09 |                     |
-| TC8 |             | 9/09 |                     |
+| -------- | ----------- | ---- | ------------------- | 
+| TC1.UM01 | Checks that the map is high fidelity|User initiates a request for the map | The system Map should ouput all the university building in high fidelity as requested|
+| TC2.UM02 | Use GPS to determine accurate location |Accurate user location| The system shall correctly output the users location on the map|
+| TC3.UM03 | The System shall use door-door navigation within buildings |Accurate location within a building|The System shoudd be able to diplay the student location within a building and |
+| TC3.UM04 | Test accessible routes for individuals with disabilities |Given a destination and a disability flag| The system should find a route in which is handicapped accesible|
+| TC3.UM05 | Building Closing time |BuildingId and Current Time| The system should display the closing times of the Building and how long till it will be closed |
+| TC4.UM06 | Update to University Infrastructure | Admin Updates| The system shall provide a notification to the DirectionsMQ and updates routes if needed |
+| TC5.UM07 | Validate crowd density display and route adjustment | Crowd density data (location and phone traffic) | The system shall display crowd density within an area and adjust routes |
+| TC6.UM08 | Verify photos of landmarks and buildings are provided |The user quick views an image | The System shall give a quick display and description of a building,landmark and restaurant|
+| TC8.UM10 | Working custom waypoints on map| User sets a custom weighpoint| A saveable waypoint is outlined on map which can have quick acess to find a route|
   
 - Test plans, including for example a test schedule, testing resources required, testing milestones and test deliverables. Test plans, covering scheduling and resourcing of all testing processes. Test plans can be more open format and should provide a description of how you would organise the actual testing of the Test Case Specifications that you've identified.
 
