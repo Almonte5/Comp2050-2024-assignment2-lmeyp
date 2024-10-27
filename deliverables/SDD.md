@@ -5,7 +5,7 @@
 
 ## Structure
 
-### Title Page
+## Title Page
 
  - DIrectionsMQ SDD
  - Latthasay Saisanavong
@@ -13,41 +13,41 @@
  - Ethan Almonte
  - Sonny Sayaloune
 
-### Vision statement  
+## Vision statement  
 
 DirectionsMQ will serve as a comprehensive naviagation tool for students, teaching staff and visitors at Macquarie University. Providing seamless, realtime navigation, DirectionsMQ is designed to help users naviagate
 through the enormous campus and help them get to their location as fast, and with less trouble as possible.
 
 
-### System Design Document 
+## System Design Document 
 
 This will include the basic architecture of the system and the high-level strategic decisions. You need to include a description of the:
 
-#### System architecture
-##### 1. Overview
+### System architecture
+#### 1. Overview
 The DirectionsMQ system will be composed of different subsystems that will interact with one another to provide users with turn-by-turn directions, real time updates, accessible routing and customised features like "dryest path" routing. The architecture will be based on a layered model meaning that both mobile and backend components will be used to support functionality like GPS tracking, database management and real time route optimisation. The two main components is the **Client App (Frontend)** and **MQ-Directions-Service (Backend)**, **Database** and external services for weather and live updates.
 
-##### 2. Components
-###### 2.1 Client App (Frontend)
+#### 2. Components
+##### 2.1 Client App (Frontend)
 This is the main mobile app that will be installed on user devices, it iwll be responsible for user interface, GPS tracking and local storage. They key modules will include:
 - Routing Module: calculates and displays routes within the app also providing a turn by turn guide
 - User Interface (UI): Displays the map, directions and information on Points of Interests (POI) like Central Courtyard.
 - Offline Mode: Allows for users to download portions of the map and relevant information 
 - Feedback & Reporting: Collect and sends the users feedback for things such as reports of route issues, directly to the backend.
 
-###### 2.2 MQ-Directions-Servcse (Backend)
+##### 2.2 MQ-Directions-Servcse (Backend)
 The MQDS server is the core of the system managing things such as route calculations, data storage and interfacing with the Directions MQ app. The key Modules will include:
 - Routing Engine: Responsible for calculating optimal and accessible routes that will also factor in real tie updates like weather and contruction.
 - Dry Path algorithm: Calculates routes with minimal exposure to rain.
 - Real-Time Update processor: Revcieve and integrate data on building opening hours, crowd density to optimise routes.
 
-###### 2.3 Database
+##### 2.3 Database
 The database is centrol for stroing campus maps, user reports, crowd density, route data and user preferences. Kep elements incldue:
 - Campus Map & Point of Interest (POI): Stores all map data including building layouts, rooms and waypoints.
 - User prefrences and Data: Contains all of the users customized settings like prefered routes and saved locations.
 - Real Time data: Hold temporary data on any live updates like closed rooms and crowd density.
 
-###### 2.4 External Services
+##### 2.4 External Services
 The system will have a few key External Services which will inclde:
 - Weather: Providing real time weather data for dry path calculations
 - MQ Authentication: Enables for secure single sign in for Macqurie staff, studends and other users.
@@ -62,7 +62,7 @@ The system will have a few key External Services which will inclde:
 - Concurrent processes (if any) and how they will be coordinated
 - A package diagram showing the subsystems you will use
 
-### Data Definitions 
+## Data Definitions 
 
 
 | Field Name            | Type       | Meaning in Problem Domain                                               | Example of Valid Data               |
@@ -96,17 +96,17 @@ The system will have a few key External Services which will inclde:
 
 
 
-### Analysis and Design
+## Analysis and Design
 
-#### Class Diagram // Alvin
+### Class Diagram // Alvin
 
 You need to do an initial design of your system -- what basic objects should it have? And what are the methods associated with those objects? You will represent your design decisions in a class diagram. In a full plan, you need to make sure any classes or methods in any sequence diagrams have been included in the class diagram -- it might help you to draw some sequence diagrams to help you to decide what your class diagram should contain. Method signatures should be given. The diagram must include, as appropriate classes, attributes, associations, inheritance and/or aggregation (if applicable) and multiplicities.
 
-#### One or more State Diagrams for the more interesting objects in your design //sonny
+### One or more State Diagrams for the more interesting objects in your design //sonny
 
 State Diagrams: You are required to consider the relevant states of each object in your system and to submit state diagrams for those that have interesting states or complex behaviour. One way to measure if a state is interesting is to consider whether you need to test that state before performing a particular action or if the state changes after an action is performed. What is interesting will depend on the application.
 
-### Requirements Traceability Matrix //ethan
+## Requirements Traceability Matrix //ethan
 
 Requirements Traceability Matrix (RTM): Set up an RTM with the following columns:
 
@@ -142,11 +142,11 @@ Requirements Traceability Matrix (RTM): Set up an RTM with the following columns
 | **REQ.N05.2**      | Authentication       | `AuthManager`         | `signInUser()`, `authorizeAccess()` | `security`, `auth`    |                  |
 
 
-### List of design assumptions (if any) // together
+## List of design assumptions (if any) // together
 
 This will help the reader to understand why you have done certain things. Please review the assumptions carefully before submission. (But note: A poor assumption should not be used as an excuse for poor design decisions.)
 
-### Test specifications 
+## Test specifications 
 
 | Test ID |Test description | Input specifications | Output specifications |
 | -------- | ----------- | ---- | ------------------- | 
@@ -204,9 +204,9 @@ Example:
 
 > The test specification section should cover at least one-third of the report.
 
-### Project Management
+## Project Management
 
-#### Minimal Viable Product // yuvi
+### Minimal Viable Product // yuvi
 
 A description of the _minimal viable product_. This is a version of the product, that is suitable for the client, trusted customers, or early adopter to use for evaluation. Which of the requirements does it implement, and which part of the architecture needs to be in place?
 
@@ -234,7 +234,7 @@ These features will need to be supported by the following architecture component
 - A backend server to handle data storage and processing for user accounts, waypoints, and location sharing.
 
 
-#### Milestones // yuvi
+### Milestones // yuvi
 
 A description of the main implementation milestones, in the order in which they should occur in the project. A milestone marks the end of a stage in the project when a version of the product can be reviewed as a whole.
 
@@ -252,7 +252,7 @@ The Milestones for the DirectionsMQ project outline key stages of development, m
 | M8 | Final Adjustments: Make adjustments based on feedback from the MVP review and prepare for final deployment. | Week 12 |
 | M9 | Project Closure: Complete documentation, review project outcomes, and gather insights for future iterations.	| Week 13 |
 
-#### Tasks // ethan
+### Tasks // ethan
 
 Describe the main tasks that need to be completed, in the form of a table. The table should include
 
@@ -262,7 +262,7 @@ Describe the main tasks that need to be completed, in the form of a table. The t
 - Effort. Since you do not know how, or even how many people work on the project, it does not make sense for this assignment to estimate workdays. Instead pick a suitable scale (S, M, L, XL or 1 to 5 stars or ...)
 - Milestone. Which milestone do they belong to?
 
-#### Risks // ethan
+### Risks // ethan
 
 A table with the following types of risks
 - Organizational risks that come from changes in the organizational environment. Think of changing stakeholders or management, or a change of mind of stakeholders or management.
@@ -280,17 +280,17 @@ For each risk include
 
 > Since you do not know how many people work on the project, or what resources you may have, it does not make too much sense to talk about people risk, or estimation risk, yet. Furthermore, if something like a probability is unknown, is better to say that it is unknown, instead of making something up.
 
-### Summary and Outlook // yuvi
+## Summary and Outlook // yuvi
 
 Your famous final words.
 
-### Appendices
+## Appendices
 
 - Log of interactions with stakeholders.
 - References.
 - Third-party-resources
 
-## Note
+# Note
 
 > Do not forget that we also expect you to complete an individual reflection on iLearn.
 
