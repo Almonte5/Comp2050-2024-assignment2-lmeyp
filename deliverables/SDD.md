@@ -7,7 +7,7 @@
 
 ### Title Page
 
-- ExploreMQ SDD, 
+- DIrectionsMQ SDD, 
   Latthasay Saisanavong
   Yuvraj Gill
   Ethan Almonte
@@ -35,7 +35,7 @@ Create a table showing what data will need to be stored in your system. For each
 
 You need to do an initial design of your system -- what basic objects should it have? And what are the methods associated with those objects? You will represent your design decisions in a class diagram. In a full plan, you need to make sure any classes or methods in any sequence diagrams have been included in the class diagram -- it might help you to draw some sequence diagrams to help you to decide what your class diagram should contain. Method signatures should be given. The diagram must include, as appropriate classes, attributes, associations, inheritance and/or aggregation (if applicable) and multiplicities.
 
-#### One or more State Diagrams for the more interesting objects in your design //Alvin
+#### One or more State Diagrams for the more interesting objects in your design //sonny
 
 State Diagrams: You are required to consider the relevant states of each object in your system and to submit state diagrams for those that have interesting states or complex behaviour. One way to measure if a state is interesting is to consider whether you need to test that state before performing a particular action or if the state changes after an action is performed. What is interesting will depend on the application.
 
@@ -86,12 +86,16 @@ This will help the reader to understand why you have done certain things. Please
 | TC1.UM01 | Checks that the map is high fidelity|User initiates a request for the map | The system Map should ouput all the university building in high fidelity as requested|
 | TC2.UM02 | Use GPS to determine accurate location |Accurate user location| The system shall correctly output the users location on the map|
 | TC3.UM03 | The System shall use door-door navigation within buildings |Accurate location within a building|The System shoudd be able to diplay the student location within a building and |
-| TC3.UM04 | Test accessible routes for individuals with disabilities |Given a destination and a disability flag| The system should find a route in which is handicapped accesible|
-| TC3.UM05 | Building Closing time |BuildingId and Current Time| The system should display the closing times of the Building and how long till it will be closed |
-| TC4.UM06 | Update to University Infrastructure | Admin Updates| The system shall provide a notification to the DirectionsMQ and updates routes if needed |
-| TC5.UM07 | Validate crowd density display and route adjustment | Crowd density data (location and phone traffic) | The system shall display crowd density within an area and adjust routes |
-| TC6.UM08 | Verify photos of landmarks and buildings are provided |The user quick views an image | The System shall give a quick display and description of a building,landmark and restaurant|
-| TC8.UM10 | Working custom waypoints on map| User sets a custom weighpoint| A saveable waypoint is outlined on map which can have quick acess to find a route|
+| TC4.UM04 | Test accessible routes for individuals with disabilities |Given a destination and a disability flag| The system should find a route in which is handicapped accesible|
+| TC5.UM05 | Building Closing time |BuildingId and Current Time| The system should display the closing times of the Building and how long till it will be closed |
+| TC6.UM06 | Update to University Infrastructure | Admin Updates| The system shall provide a notification to the DirectionsMQ and updates routes if needed |
+| TC7.UM07 | Validate crowd density display and route adjustment | Crowd density data (location and phone traffic) | The system shall display crowd density within an area and adjust routes |
+| TC8.UM08 | Verify photos of landmarks and buildings are provided |The user quick views an image | The System shall give a quick display and description of a building,landmark and restaurant|
+| TC9.UM10 | Working custom waypoints on map| User sets a custom weighpoint| A saveable waypoint is outlined on map which can have quick acess to find a route|
+| TC10.I01 | The app should connect to the internet | User request System acess | The app should require internet acess as to function and get updates |
+| TC11.I02 | The app should be connected through MQ servers | Server URL, port number, and valid credentials |The system should establish a connection to the MQ server successfully |
+| TC12.I03 | Check User LogIN e.g(visitor, student admin)| User Submits request to acess App| The App should provide acess to the app based on the credentials |
+| TC13.I04 | 
   
 - Test plans
 Introduction
