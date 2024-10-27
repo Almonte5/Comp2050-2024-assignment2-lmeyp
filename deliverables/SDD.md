@@ -82,7 +82,7 @@ The system will have a few key External Services which will inclde:
 | `distance`            | Float      | Distance of the route in kilometers                                     | 15.2                          |
 | `lastUpdated`         | DateTime   | Timestamp of the last update to the route or traffic conditions         | "2024-10-27T14:30:00"         |
 | `preferredRouteType`  | String     | Preferred route type (e.g., shortest, dryest, scenic)                   | "Fastest"                     |
-| `userRating`          | Integer    | Rating provided by the user for a facility or route                     | 4 (ratintgs are out of 5)                   |
+| `userRating`          | Integer    | Rating provided by the user for a facility or route                     | 4 (ratings are out of 5)                   |
 | `userFeedback`        | String     | Feedback provided by users on route accuracy or convenience             | "Very accurate directions"    |
 | `weatherCondition`    | String     | Current weather condition affecting the route                           | "Rainy"                       |
 | `safetyAlert`         | Boolean    | Indicates if there’s a safety alert (e.g., road closures or accidents)  | True                          |
