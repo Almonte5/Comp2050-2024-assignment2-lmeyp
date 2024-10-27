@@ -7,15 +7,19 @@
 
 ### Title Page
 
-- DIrectionsMQ SDD, 
-  Latthasay Saisanavong
-  Yuvraj Gill
-  Ethan Almonte
-  Sonny Sayaloune
+ - DIrectionsMQ SDD
+ - Latthasay Saisanavong
+ - Yuvraj Gill
+ - Ethan Almonte
+ - Sonny Sayaloune
 
-- Vision statement  //Alvin
-  >it DirectionsMQ will serve as the map for anyone at Macquarie University. The app will allow students, teacher or visitors to able to easily navigate across the uni as it can get confusing for even experienced tutors. with location tracking the app can guide you to your class. The app includes a friends feature with location sharing to find out where your friends may be that day. These are one of many features. others include a waypoint app to save locations, adding friends.
-### System Design Document // together
+### Vision statement  
+
+DirectionsMQ will serve as a comprehensive naviagation tool for students, teaching staff and visitors at Macquarie University. Providing seamless, realtime navigation, DirectionsMQ is designed to help users naviagate
+through the enormous campus and help them get to their location as fast, and with less trouble as possible.
+
+
+### System Design Document 
 
 This will include the basic architecture of the system and the high-level strategic decisions. You need to include a description of the:
 
@@ -58,13 +62,43 @@ The system will have a few key External Services which will inclde:
 - Concurrent processes (if any) and how they will be coordinated
 - A package diagram showing the subsystems you will use
 
-### Data Definitions //sonny
+### Data Definitions 
 
-Create a table showing what data will need to be stored in your system. For each item give the name of the field/attribute/variable, its type, its meaning in the problem domain expressed in natural language, and an example of valid data.
+
+| Field Name            | Type       | Meaning in Problem Domain                                               | Example of Valid Data               |
+|-----------------------|------------|-------------------------------------------------------------------------|-------------------------------|
+| `userID`              | Integer    | Unique identifier for each user in the system                           | 1069                     |
+| `origin`              | String     | Starting point of the user’s requested route                            | "Macquarie University Sport and Aquatic Centre"       |
+| `destination`         | String     | Endpoint of the user’s requested route                                  | "4 Research Park Drive"      |
+| `routeID`             | Integer    | Unique identifier for each generated route                              | 501                           |
+| `routeSteps`          | Array      | Array of step-by-step directions for the route                          | "Turn left", "Go straight"  |
+| `landmark`            | String     | Major landmark near a route for easier navigation                       | "Central Building"              |
+| `estimatedTime`       | Integer    | Estimated travel time in minutes for the route                          | 25                            |
+| `distance`            | Float      | Distance of the route in kilometers                                     | 15.2                          |
+| `lastUpdated`         | DateTime   | Timestamp of the last update to the route or traffic conditions         | "2024-10-27T14:30:00"         |
+| `preferredRouteType`  | String     | Preferred route type (e.g., shortest, dryest, scenic)                   | "Fastest"                     |
+| `userRating`          | Integer    | Rating provided by the user for a facility or route                     | 4 (ratintgs are out of 5)                   |
+| `userFeedback`        | String     | Feedback provided by users on route accuracy or convenience             | "Very accurate directions"    |
+| `weatherCondition`    | String     | Current weather condition affecting the route                           | "Rainy"                       |
+| `safetyAlert`         | Boolean    | Indicates if there’s a safety alert (e.g., road closures or accidents)  | True                          |
+| `reRouteNeeded`       | Boolean    | Flag to indicate if rerouting is necessary due to real-time conditions  | True                          |
+| `realTimeUpdates`     | Array      | Array of real-time alerts or messages about route changes               | "Construction near 4 Research Park Drive"    |
+| `notificationOptIn`   | Boolean    | Indicates if the user has opted in for notifications                    | True                          |
+| `friendID`            | Integer    | Unique identifier for a friend of the user                              | 1070                          |
+| `friendshipStatus`    | String     | Current status of friendship (e.g., Pending, Accepted, Blocked)         | "Accepted", "Pending", "Denied" |
+| `friendAlias`         | String     | User-assigned nickname for the friend, if set                           | "nerd" "bestie"                       |
+| `accessibilityOptions`| String     | User-selected accessibility preferences (e.g., wheelchair access)       | "Wheelchair Accessible"        |
+| `infrastructureStatus`| String     | Current condition of infrastructure, including route and facility health | "Operational"              |
+| `userSession`         | String     | Identifier for the current user session                                | "session_1"               |
+| `authenticationStatus`| String     | Status of user authentication (e.g., signed in, access granted)        | "Authorized"                   |
+
+
+
+
 
 ### Analysis and Design
 
-#### Class Diagram // sonny
+#### Class Diagram // Alvin
 
 You need to do an initial design of your system -- what basic objects should it have? And what are the methods associated with those objects? You will represent your design decisions in a class diagram. In a full plan, you need to make sure any classes or methods in any sequence diagrams have been included in the class diagram -- it might help you to draw some sequence diagrams to help you to decide what your class diagram should contain. Method signatures should be given. The diagram must include, as appropriate classes, attributes, associations, inheritance and/or aggregation (if applicable) and multiplicities.
 
@@ -203,6 +237,20 @@ These features will need to be supported by the following architecture component
 #### Milestones // yuvi
 
 A description of the main implementation milestones, in the order in which they should occur in the project. A milestone marks the end of a stage in the project when a version of the product can be reviewed as a whole.
+
+The Milestones for the DirectionsMQ project outline key stages of development, marking the completion of essential features and readiness for review. Each milestone reflects a significant achievement in the project timeline.
+
+| Milestone ID | Milestone Description | Target Date |
+|--------------|-----------------------|-------------|
+| M1 | Project Kickoff: Team formation and project planning, including requirements review and initial architecture discussions. | Week 1|
+| M2 | Completion of User Authentication Module: Implement registration, login, and profile management features. | Week 3|
+| M3 | Implementation of Map Navigation: Develop the interactive map interface and integrate with mapping API.| Week 5|
+| M4 | Real-time Location Tracking: Enable location tracking features and ensure accuracy of displayed location. | Week 7 |
+| M5 | Classroom Directions Feature: Implement the ability to get directions to classrooms from the current location.	| Week 9 |
+| M6 | Friends Feature Implementation: Enable users to add friends and share their locations.	| Week 10 |
+| M7 | MVP Review: Conduct user testing with early adopters, gather feedback, and identify areas for improvement.	| Week 11 |
+| M8 | Final Adjustments: Make adjustments based on feedback from the MVP review and prepare for final deployment. | Week 12 |
+| M9 | Project Closure: Complete documentation, review project outcomes, and gather insights for future iterations.	| Week 13 |
 
 #### Tasks // ethan
 
