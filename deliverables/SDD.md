@@ -208,9 +208,9 @@ The purpose of this test plan is to outline the testing methodology for the Disc
 
 ##### 5.2.1 Test Scope
 This testing effort will encompass various types of testing, including but not limited to:
-  ###### 5.2.1.1 Functional Testing: Theses will check that the FUnctional parts of the code should fucntion as expected.
-  ###### 5.2.1.2 Performance Testing: To evaluate the application's perfomance and usability.
-  ###### 5.2.1.3 Usability Testing: Evaluate how well the DiscoverMQ usability is. these may include UI and other 
+  - Functional Testing: Theses will check that the FUnctional parts of the code should fucntion as expected.
+  - 5.2.1.2 Performance Testing: To evaluate the application's perfomance and usability.
+  - 5.2.1.3 Usability Testing: Evaluate how well the DiscoverMQ usability is. these may include UI and other 
 
 ##### 5.2.2 Testing Resources
 List the resources required for testing, such as:
@@ -284,7 +284,7 @@ The Milestones for the DirectionsMQ project outline key stages of development, m
 | M8 | Final Adjustments: Make adjustments based on feedback from the MVP review and prepare for final deployment. | Week 12 |
 | M9 | Project Closure: Complete documentation, review project outcomes, and gather insights for future iterations.	| Week 13 |
 
-### 6.3 Tasks // Yuvi
+### 6.3 Tasks 
 
 Describe the main tasks that need to be completed, in the form of a table. The table should include
 
