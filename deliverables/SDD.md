@@ -203,7 +203,7 @@ Example:
 | Commencement of Integration Testing | week 5  |
 | Completion of Integration Testing | week 6  |
 | User Acceptance Testing        | week 7  |
-| Final Review and Approval      | weel 8  |
+| Final Review and Approval      | week 8  |
 
   
 - Test plans, including for example a test schedule, testing resources required, testing milestones and test deliverables. Test plans, covering scheduling and resourcing of all testing processes. Test plans can be more open format and should provide a description of how you would organise the actual testing of the Test Case Specifications that you've identified.
