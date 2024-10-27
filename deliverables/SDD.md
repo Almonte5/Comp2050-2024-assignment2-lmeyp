@@ -290,11 +290,15 @@ Description: The app will allow users to share their locations with friends with
 
 ## 7 Summary and Outlook
 
-The DirectionsMQ project focuses on developing a navigation and location sharing app for the Macquarie University community. The MVP will provide essential features like user authentication, real-time location tracking, and turn-by-turn navigation to meet the basic needs of students and staff.
+The DirectionsMQ project aims to develop a user-friendly navigation and location sharing app tailored for the Macquarie University community. By focusing on core functionalities such as user authentication, real-time location tracking, and turn-by-turn navigation, the app addresses the fundamental needs of students and staff navigating the campus. The MVP has been designed to validate the core concept of the application and gather valuable user feedback for future enhancements.
 
-Moving forward, we will prioritize refining the app based on user feedback from the MVP review, ensuring it evolves to enhance the user experience. Future enhancements may include personalized route recommendations and integration with university events.
+As we move forward, our emphasis will be on refining the app based on insights which we will have gathered from user testing and continuously improving the user experience. The feedback collected during the MVP review will provide information, ensuring that the app evolves to meet user expectations and adapt to changing needs.
 
-Ultimately, DirectionsMQ aims to streamline navigation on campus and foster a stronger sense of community among users, positioning itself as a vital tool within the university environment.
+Looking ahead, we anticipate the addition of advanced features such as personalized route recommendations and integration with university events. By staying aligned with stakeholder priorities and emerging technologies, DirectionsMQ has the potential to become an indispensable tool for navigating Macquarie University, which allows for a stronger sense of community and connectivity among users.
+
+In conclusion, the successful implementation of DirectionsMQ will not only streamline navigation on campus but also lay the groundwork for future improvements to enhance the overall university experience.
+
+
 
 ## 8 Appendices
    ### 8.1 Log of interactions with stakeholders
