@@ -33,13 +33,13 @@ This will include the basic architecture of the system and the high-level strate
 
 Create a table showing what data will need to be stored in your system. For each item give the name of the field/attribute/variable, its type, its meaning in the problem domain expressed in natural language, and an example of valid data.
 
-| Field Name            | Type       | Meaning in Problem Domain                                               | Example of Data               |
+| Field Name            | Type       | Meaning in Problem Domain                                               | Example of Valid Data               |
 |-----------------------|------------|-------------------------------------------------------------------------|-------------------------------|
 | `userID`              | Integer    | Unique identifier for each user in the system                           | 1069                     |
 | `origin`              | String     | Starting point of the user’s requested route                            | "Macquarie University Sport and Aquatic Centre"       |
 | `destination`         | String     | Endpoint of the user’s requested route                                  | "4 Research Park Drive"      |
 | `routeID`             | Integer    | Unique identifier for each generated route                              | 501                           |
-| `routeSteps`          | Array      | Array of step-by-step directions for the route                          | ["Turn left", "Go straight"]  |
+| `routeSteps`          | Array      | Array of step-by-step directions for the route                          | "Turn left", "Go straight"  |
 | `landmark`            | String     | Major landmark near a route for easier navigation                       | "Central Building"              |
 | `estimatedTime`       | Integer    | Estimated travel time in minutes for the route                          | 25                            |
 | `distance`            | Float      | Distance of the route in kilometers                                     | 15.2                          |
@@ -49,7 +49,7 @@ Create a table showing what data will need to be stored in your system. For each
 | `weatherCondition`    | String     | Current weather condition affecting the route                           | "Rainy"                       |
 | `safetyAlert`         | Boolean    | Indicates if there’s a safety alert (e.g., road closures or accidents)  | True                          |
 | `reRouteNeeded`       | Boolean    | Flag to indicate if rerouting is necessary due to real-time conditions  | True                          |
-| `realTimeUpdates`     | Array      | Array of real-time alerts or messages about route changes               | ["Road closed at Main St"]    |
+| `realTimeUpdates`     | Array      | Array of real-time alerts or messages about route changes               | "Construction near 4 Research Park Drive"    |
 | `notificationOptIn`   | Boolean    | Indicates if the user has opted in for notifications                    | True                          |
 
 
