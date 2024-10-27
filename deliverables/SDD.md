@@ -205,6 +205,20 @@ These features will need to be supported by the following architecture component
 
 A description of the main implementation milestones, in the order in which they should occur in the project. A milestone marks the end of a stage in the project when a version of the product can be reviewed as a whole.
 
+The Milestones for the DirectionsMQ project outline key stages of development, marking the completion of essential features and readiness for review. Each milestone reflects a significant achievement in the project timeline.
+
+| Milestone ID | Milestone Description | Target Date |
+|--------------|-----------------------|-------------|
+| M1 | Project Kickoff: Team formation and project planning, including requirements review and initial architecture discussions. | Week 1|
+| M2 | Completion of User Authentication Module: Implement registration, login, and profile management features. | Week 3|
+| M3 | Implementation of Map Navigation: Develop the interactive map interface and integrate with mapping API.| Week 5|
+| M4 | Real-time Location Tracking: Enable location tracking features and ensure accuracy of displayed location. | Week 7 |
+| M5 | Classroom Directions Feature: Implement the ability to get directions to classrooms from the current location.	| Week 9 |
+| M6 | Friends Feature Implementation: Enable users to add friends and share their locations.	| Week 10 |
+| M7 | MVP Review: Conduct user testing with early adopters, gather feedback, and identify areas for improvement.	| Week 11 |
+| M8 | Final Adjustments: Make adjustments based on feedback from the MVP review and prepare for final deployment. | Week 12 |
+| M9 | Project Closure: Complete documentation, review project outcomes, and gather insights for future iterations.	| Week 13 |
+
 #### Tasks // ethan
 
 Describe the main tasks that need to be completed, in the form of a table. The table should include
