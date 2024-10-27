@@ -309,12 +309,18 @@ For each risk include
 
 Your famous final words.
 
-## Appendices
-
+## 8 Appendices
 - Log of interactions with stakeholders.
-   
+   ### 8.1 Log of interactions with stakeholders
+|Date       |Stakeholder |Interaction Summary   |Action Items |
+|-----------|------------|----------------------|-------------|
+|2024-10-03 | Amit Barua (Group2TeamB1) &  Yash Shitole (Group2TeamB1) | Followed up to confirm design assumptions | Confirm design choices |
+|2024-10-10 | Emmanuel Almonte (Group2TeamB2) | Ask about the requirements to confirms when creating test specifications | Take input and translate into the SDD |
+|2024-10-17 | Yash Shitole (Group2TeamB1) &  Emmanuel Almonte (Group2TeamB2) | My group went to the two groups to enquire about privacy risk in the design | Create risk according to stakeholder demands |
+
 - References.
 - Third-party-resources
+
 
 # Note
 
