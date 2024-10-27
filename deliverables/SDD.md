@@ -101,12 +101,8 @@ The system will have a few key External Services which will inclde:
 
 
 
-<<<<<<< HEAD
-## Analysis and Design
-=======
 
-### Analysis and Design
->>>>>>> 3c8e1262051f5bdf26f164ce476794dccee50577
+## Analysis and Design
 
 ### Class Diagram // Alvin
 
