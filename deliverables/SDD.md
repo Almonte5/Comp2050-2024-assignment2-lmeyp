@@ -3,11 +3,9 @@
 > Use this markdown file to create the report. For the submission print this document to a PDF, and upload it to iLearn. The maximum number of pages is 30.
 > Use the document structure below.
 
-## Structure
-
 ## Title Page
 
- - DIrectionsMQ SDD
+ - DirectionsMQ SDD
 
  ### Members
  - Latthasay Saisanavong
