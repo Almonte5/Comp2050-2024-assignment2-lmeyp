@@ -44,13 +44,13 @@ The MQDS server is the core of the system managing things such as route calculat
 - Real-Time Update processor: Revcieve and integrate data on building opening hours, crowd density to optimise routes.
 
 ##### 2.3 Database
-The database is centrol for stroing campus maps, user reports, crowd density, route data and user preferences. Kep elements incldue:
+The database is central for storfing campus maps, user reports, crowd density, route data and user preferences. Key elements include:
 - Campus Map & Point of Interest (POI): Stores all map data including building layouts, rooms and waypoints.
-- User prefrences and Data: Contains all of the users customized settings like prefered routes and saved locations.
-- Real Time data: Hold temporary data on any live updates like closed rooms and crowd density.
+- User Preferences and Data: Contains all of the users customized settings like preferred routes and saved locations.
+- Real Time Data: Hold temporary data on any live updates like closed rooms and crowd density.
 
 ##### 2.4 External Services
-The system will have a few key External Services which will inclde:
+The system will have a few key External Services which will include:
 - Weather: Providing real time weather data for dry path calculations
 - MQ Authentication: Enables for secure single sign in for Macqurie staff, studends and other users.
 - MQ Campus updates: Supplies regular updates on campus events construction and other obstacles.
