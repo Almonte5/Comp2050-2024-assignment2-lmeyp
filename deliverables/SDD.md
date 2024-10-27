@@ -52,29 +52,6 @@ Requirements Traceability Matrix (RTM): Set up an RTM with the following columns
 
 > There should be one row for each requirement. For this deliverable, just fill in the first five columns, since the last column (and usually a couple more after that which I've already deleted) are concerned with the design of the system.
 
-| **Requirement ID** | **Use Cases**        | **Classes**           | **Methods**                        | **Packages**           | **Build Number** |
-|--------------------|----------------------|-----------------------|------------------------------------|-------------------------|------------------|
-| **REQ.UM1**        | Routing A to B       | `MapDisplay`, `Building` | `showMap()`, `loadBuildingDetails()` | `uni.map`, `building`   |                  |
-| **REQ.UM2**        | Routing A to B       | `LocationManager`     | `getUserLocation()`               | `location`              |                  |
-| **REQ.UM3**        | Routing A to B       | `Navigation`          | `provideIndoorDirections()`       | `navigation`, `location`|                  |
-| **REQ.UM4**        | Routing A to B       | `AccessibilityManager`| `getAccessibleRoutes()`           | `accessibility`         |                  |
-| **REQ.UM5**        | Routing A to B       | `BuildingSchedule`    | `updateRoutesBasedOnHours()`      | `scheduling`, `routing` |                  |
-| **REQ.UM6**        | User Report          | `InfrastructureMonitor` | `updateInfrastructure()`          | `maintenance`           |                  |
-| **REQ.UM7**        | Routing A to B       | `CrowdMonitor`        | `adjustForCrowdDensity()`         | `traffic`               |                  |
-| **REQ.UM8**        | Routing A to B       | `MapDisplay`          | `showLandmarkPhotos()`            | `uni.map`               |                  |
-| **REQ.UM9**        | User Report          | `FeedbackSystem`      | `rateFacility()`, `addComment()`  | `feedback`              |                  |
-| **REQ.RT1**        | Routing A to B       | `RouteCalculator`     | `findOptimalRoute()`              | `routing`               |                  |
-| **REQ.RT3**        | Routing A to B       | `RouteScheduler`      | `adjustBasedOnTime()`             | `routing`, `scheduling` |                  |
-| **REQ.DP1**        | Routing in Rain      | `WeatherService`      | `getWeatherData()`                | `weather`               |                  |
-| **REQ.DP2**        | Routing in Rain      | `WeatherService`, `RouteCalculator` | `findDryestPath()` | `weather`, `routing` | |
-| **REQ.UR1**        | User Report          | `FeedbackSystem`      | `reportFacilityIssue()`           | `feedback`, `reporting` |                  |
-| **REQ.UR2**        | User Report          | `FeedbackSystem`      | `reportRouteClosure()`            | `feedback`, `routing`   |                  |
-| **REQ.N01.1**      | Routing A to B       | `RouteCalculator`     | `calculateOptimalRoute()`         | `routing`               |                  |
-| **REQ.N02.1**      | All Use Cases        | `SystemMonitor`       | `monitorUptime()`                 | `monitoring`            |                  |
-| **REQ.N05.1**      | All Use Cases        | `DataEncryptor`       | `encryptLocationData()`           | `security`, `data`      |                  |
-| **REQ.N05.2**      | Authentication       | `AuthManager`         | `signInUser()`, `authorizeAccess()` | `security`, `auth`    |                  |
-
-
 ### List of design assumptions (if any) // together
 
 This will help the reader to understand why you have done certain things. Please review the assumptions carefully before submission. (But note: A poor assumption should not be used as an excuse for poor design decisions.)
@@ -87,16 +64,15 @@ Test Specifications should contain the following:
   Acceptable documentation for Test Case Specifications would include:
 
 | Test ID |Test description | Input specifications | Output specifications |
-| -------- | ----------- | ---- | ------------------- | 
-| TC1.UM01 | Checks that the map is high fidelity|User initiates a request for the map | The system Map should ouput all the university building in high fidelity as requested|
-| TC2.UM02 | Use GPS to determine accurate location |Accurate user location| The system shall correctly output the users location on the map|
-| TC3.UM03 | The System shall use door-door navigation within buildings |Accurate location within a building|The System shoudd be able to diplay the student location within a building and |
-| TC3.UM04 | Test accessible routes for individuals with disabilities |Given a destination and a disability flag| The system should find a route in which is handicapped accesible|
-| TC3.UM05 | Building Closing time |BuildingId and Current Time| The system should display the closing times of the Building and how long till it will be closed |
-| TC4.UM06 | Update to University Infrastructure | Admin Updates| The system shall provide a notification to the DirectionsMQ and updates routes if needed |
-| TC5.UM07 | Validate crowd density display and route adjustment | Crowd density data (location and phone traffic) | The system shall display crowd density within an area and adjust routes |
-| TC6.UM08 | Verify photos of landmarks and buildings are provided |The user quick views an image | The System shall give a quick display and description of a building,landmark and restaurant|
-| TC8.UM10 | Working custom waypoints on map| User sets a custom weighpoint| A saveable waypoint is outlined on map which can have quick acess to find a route|
+| --- | ----------- | ---- | ------------------- | 
+| TC1 |             | 29/08|                     |
+| TC2 |             | 8/09 |                     |
+| TC3 |             | 8/09 |                     |
+| TC4 |             | 8/09 |                     |
+| TC5 |             | 8/09 |                     |
+| TC6 |             | 9/09 |                     |
+| TC7 |             | 9/09 |                     |
+| TC8 |             | 9/09 |                     |
   
 - Test plans, including for example a test schedule, testing resources required, testing milestones and test deliverables. Test plans, covering scheduling and resourcing of all testing processes. Test plans can be more open format and should provide a description of how you would organise the actual testing of the Test Case Specifications that you've identified.
 
@@ -107,6 +83,30 @@ Test Specifications should contain the following:
 #### Minimal Viable Product // yuvi
 
 A description of the _minimal viable product_. This is a version of the product, that is suitable for the client, trusted customers, or early adopter to use for evaluation. Which of the requirements does it implement, and which part of the architecture needs to be in place?
+
+The Minimal Viable Product (MVP) for the DirectionsMQ app is a foundational version that is designed to provide navigation and location sharing features for users at Macquarie University. This version focuses on delivering core functionalities that validate the app's concept and gather user feedback for future enhancements.
+
+1. User Authentication: Requirement ID: R1
+Description: Users can create an account and log in securely to access personalized features.
+2. Real-time Location Tracking:
+Requirement ID: R2
+Description: Users will be able to see their current location on the map to facilitate navigation.
+3. Turn-by-Turn Navigation:
+Requirement ID: R3
+Description: The app will offer turn-by-turn navigation from the user's current location to a selected destination on campus.
+4. Waypoint Management:
+Requirement ID: R4
+Description: Users can save and manage waypoints, enabling them to quickly access frequently visited locations.
+5. Location Sharing:
+Requirement ID: R5
+Description: The app will allow users to share their locations with friends within the app, enhancing user interaction and coordination.
+
+
+These features will need to be supported by the following architecture components:
+- A user authentication service for secure login and account management.
+- A mapping and geolocation service to enable interactive map features and real-time tracking.
+- A backend server to handle data storage and processing for user accounts, waypoints, and location sharing.
+
 
 #### Milestones // yuvi
 
