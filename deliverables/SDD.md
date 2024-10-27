@@ -13,8 +13,11 @@
   Ethan Almonte
   Sonny Sayaloune
 
-- Vision statement  //Alvin
-  >it DirectionsMQ will serve as the map for anyone at Macquarie University. The app will allow students, teacher or visitors to able to easily navigate across the uni as it can get confusing for even experienced tutors. with location tracking the app can guide you to your class. The app includes a friends feature with location sharing to find out where your friends may be that day. These are one of many features. others include a waypoint app to save locations, adding friends.
+- Vision statement  
+DirectionsMQ will serve as a comprehensive naviagation tool for students, teaching staff and visitors at Macquarie University. Providing seamless, realtime navigation,k DirectionsMQ is designed to help users naviagate
+through the enormous campus and help them get to their location as fast, and with less trouble as possible.
+
+
 ### System Design Document // together
 
 This will include the basic architecture of the system and the high-level strategic decisions. You need to include a description of the:
