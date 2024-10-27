@@ -227,7 +227,7 @@ Example:
 
 ## 6 Project Management
 
-### 6.1 Minimal Viable Product // yuvi
+### 6.1 Minimal Viable Product 
 
 A description of the _minimal viable product_. This is a version of the product, that is suitable for the client, trusted customers, or early adopter to use for evaluation. Which of the requirements does it implement, and which part of the architecture needs to be in place?
 
@@ -248,18 +248,7 @@ Description: Users can save and manage waypoints, enabling them to quickly acces
 Requirement ID: R5
 Description: The app will allow users to share their locations with friends within the app, enhancing user interaction and coordination.
 
-
-These features will need to be supported by the following architecture components:
-- A user authentication service for secure login and account management.
-- A mapping and geolocation service to enable interactive map features and real-time tracking.
-- A backend server to handle data storage and processing for user accounts, waypoints, and location sharing.
-
-
-### 6.2 Milestones // yuvi
-
-A description of the main implementation milestones, in the order in which they should occur in the project. A milestone marks the end of a stage in the project when a version of the product can be reviewed as a whole.
-
-The Milestones for the DirectionsMQ project outline key stages of development, marking the completion of essential features and readiness for review. Each milestone reflects a significant achievement in the project timeline.
+### 6.2 Milestones
 
 | Milestone ID | Milestone Description | Target Date |
 |--------------|-----------------------|-------------|
@@ -275,14 +264,6 @@ The Milestones for the DirectionsMQ project outline key stages of development, m
 
 ### 6.3 Tasks 
 
-Describe the main tasks that need to be completed, in the form of a table. The table should include
-
-- An ID for the task
-- A description of the task
-- Dependencies, i.e. tasks that need to be completed before this task can start.
-- Effort. Since you do not know how, or even how many people work on the project, it does not make sense for this assignment to estimate workdays. Instead pick a suitable scale (S, M, L, XL or 1 to 5 stars or ...)
-- Milestone. Which milestone do they belong to?
-
 | Task ID | Description                                                        | Dependencies             | Effort | Milestone                                               |
 |---------|--------------------------------------------------------------------|--------------------------|--------|--------------------------------------------------------|
 | T1 | Conduct a kickoff meeting to define project goals and expectations. | None | S | M1: Project Kickoff|
@@ -296,20 +277,6 @@ Describe the main tasks that need to be completed, in the form of a table. The t
 | T9 | Complete project documentation and conduct a project closure review. | T8 | S | M9: Project Closure |
 
 ### 6.4 Risks 
-
-A table with the following types of risks
-- Organizational risks that come from changes in the organizational environment. Think of changing stakeholders or management, or a change of mind of stakeholders or management.
-- Requirements risks, that come from changes to the requirements, or wrong requirements, and the process of managing requirement changes.
-- Technology risks that come from the software or hardware technologies that are used by the system. **Include here parts of the system that you may need from the team that works on the other half of the system, or parts that you both depend on.**
-- Tools risks that come from the software tools and other support software used to develop the system.
-
-For each risk include
-
-- An ID
-- A description of the risk.
-- The probability of that risk happening (use an appropriate scale: low to high, or 0% to 100%, or ...)
-- The severity of the risk (use an appropriate scale: none to catastrophic, or 0 to 10, or ...)
-- Mitigation strategies. Suggest measures that can be taken to reduce the risk.
 
 > Since you do not know how many people work on the project, or what resources you may have, it does not make too much sense to talk about people risk, or estimation risk, yet. Furthermore, if something like a probability is unknown, is better to say that it is unknown, instead of making something up.
 
