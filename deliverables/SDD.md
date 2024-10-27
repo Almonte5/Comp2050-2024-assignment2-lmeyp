@@ -55,7 +55,37 @@ The system will have a few key External Services which will include:
 
 
 
-#### 2.2 Storage/persistent data strategy
+#### 3. Storage/persistent data strategy
+
+##### 3.1 Data Types and Storage Requirements
+- User data: Inclides user settings, preferences and accesibility needs
+  - Storage Location: On the user device via local storage.
+  - Persistent: Saved for consistent experience across different sessions
+
+- Campus Map data: Detailed maps o campus with Points of Interests
+  - Storage Location: Local storage for offline access with optional updates from server.
+  - Persistent: Cached on the device for offline usage and reloaded when the app is online.
+
+- Route Data: Includes optimal paths, alternate routes and accessible paths. Some of which can be submitted by users.
+  - Storage Location: Short term storage on the device and uploaded to MQ Direction services when online.
+  - Persistent: Cached for offline use and is cleared/updatd periodically.
+
+- User Reprots and Feedbacks: Inclides reports on closed routes, contruction, accessibility feedback and other user submitted data.
+  - Storage Location: Temporarily stored on the device and uploaded to  MQDS when connected online.
+  - Persistent: Retained on the server so that it can be reviewed by admins and be acted upon accordingly.
+
+- Real Time Data: Crowd Density, weater updates used to modify router based on current conditions
+  - Storage Location: Temporarily cached on the device and will refresh regularly
+  - Persistent: Cleared after each session or after further updates
+
+##### 3.2 Synchronization Strategy
+- Offline Sync: The app allows users to download a static map aswell as route data. When the user is back online it will ush user reports and route submissions to MQDS and retireve relevant updates.
+- Conflict Resolution: User data conflicts like preferences and waypoints that are updated offline will have a "last modified" displayed.
+- Real-Time Data Updates: Real time data will be refreshed on 2 minute intervals.
+
+##### 3.3 Data Security and Privacy Considerations
+- Encryption: Sensitive data, like user location history and reports, will be encrypted on the device and during transmission.
+- Access Control: Based on the role of the user, only authorised people can modify certain data 
 
  
 #### 2.3 Noteworthy trade-offs and choices
